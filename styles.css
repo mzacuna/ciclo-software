@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: url('header.jpg') no-repeat center center;
+    background: url('header.png') no-repeat center center;
     background-size: cover;
     height: 250px;
     text-align: center;
