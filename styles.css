@@ -1,40 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #B8EEF5;
+    background-color: #E0F7FA;
+    line-height: 1.6;
 }
 
 header {
-    background: url('header.png') no-repeat center center;
+    background: url('header.jpg') no-repeat center center;
     background-size: cover;
     height: 250px;
     text-align: center;
-    padding: 60px 0; /* Vertical padding */
+    padding: 60px 0;
 }
 
 header h1 {
     color: white;
     font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 0; /* Remove default margin */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
-    padding: 10px 20px; /* Vertical and horizontal padding */
-    border-radius: 10px; /* Optional: rounded corners */
-    display: inline-block; /* To limit the background to the text width */
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
-main, footer {
+main {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 main article h2 {
     margin-top: 0;
-    color: #444;
+    color: #333;
+    border-bottom: 2px solid #E0F7FA;
+    padding-bottom: 10px;
 }
 
 main article h2 a {
@@ -42,7 +46,24 @@ main article h2 a {
     color: inherit;
 }
 
+main article p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
 footer {
+    max-width: 800px;
+    margin: 20px auto;
     text-align: center;
     color: #777;
+    font-size: 0.9em;
+    padding: 20px;
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007B9E;
 }
