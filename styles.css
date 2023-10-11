@@ -111,6 +111,43 @@ ol, ul {
     padding: 10px;
 }
 
+/* By default, let's hide the button for mobile screens */
+.back-to-index {
+    display: none;
+}
+
+/* Show the button for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+    .back-to-index {
+        font-family: 'Roboto', sans-serif;
+        position: fixed;
+        /* This makes it stay in a fixed position while scrolling */
+        left: 220px;
+        /* Distance from the left of the screen */
+        top: 50%;
+        /* This centers it vertically */
+        transform: translateY(-50%);
+        /* This ensures true centering */
+        z-index: 1000;
+        /* This ensures it stays on top of other content */
+
+        /* Styling the button (feel free to adjust) */
+        display: block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+.back-to-index:hover {
+    color: #bababa;
+    background-color: #555;
+}
+
 footer {
     max-width: 800px;
     margin: 20px auto;
