@@ -51,6 +51,11 @@ main article p {
     margin-bottom: 20px;
 }
 
+ol, ul {
+    font-size: 1.1em;
+    margin: 0 0 20px 20px;
+}
+
 footer {
     max-width: 800px;
     margin: 20px auto;
